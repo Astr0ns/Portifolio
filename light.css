@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    background-color: rgba(219, 219, 219, 0.512);
+    overflow: hidden;
+}
+
+header{
+    padding: 1rem;
+    height: 2rem;
+    background-color: rgba(128, 128, 128, 0.579);
+}
+/* O interruptor - a caixa ao redor do controle deslizante */
+.switch {
+    
+    font-size: 17px;
+    position:relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Ocultar caixa de seleção HTML padrão */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* o controlador deslizante */
+  .slider {
+    margin: -20px -5px 20px 5px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: .4s;
+    border-radius: 5px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 0.1em;
+    border-radius: 0px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(2.8em) rotate(360deg);
+}
+
+svg{
+    color: #000000 ;
+}
+
+li {
+    display: inline-block;
+    text-align: left;
+    margin: -1px 2px 5px;
+}
+
+.card-infos {
+    width: 28.1rem;
+    height: 31.2rem;
+    background: white;
+    border-radius: 50px;
+    box-shadow:
+     rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+     rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+     rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+     /*COR DO FUNDO DO CARD*/
+     rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+     rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+     rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin: 5.6rem 38%;
+    
+  }
+.img-prf{
+    position: relative;
+    top: 6.8rem;
+    display: flex;
+    justify-content: center;
+}
+.prf{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    margin-top: -11rem;
+    border: rgba(190, 190, 190, 0.541) solid;
+    box-shadow: .5rem -.6rem .6rem rgba(190, 190, 190, 0.541) ;
+    transition: .5s;
+}
