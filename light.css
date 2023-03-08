@@ -12,16 +12,18 @@ body{
 }
 
 header{
+    display: inline-flex;
     padding: 1rem;
-    height: 2rem;
+    height: 60rem;
+    
     background-color: rgba(128, 128, 128, 0.579);
 }
 /* O interruptor - a caixa ao redor do controle deslizante */
 .switch {
-    
+    margin-left: -10px;
     font-size: 17px;
     position:relative;
-    display: inline-block;
+    display: inline-flex;
     width: 3.5em;
     height: 2em;
   }
@@ -74,9 +76,9 @@ svg{
 }
 
 li {
-    display: inline-block;
-    text-align: left;
-    margin: -1px 2px 5px;
+    display: inline-flexbox;
+    text-align: center;
+    margin: 12rem 2px 5px;
 }
 
 .card-infos {
@@ -94,7 +96,7 @@ li {
      rgba(0, 0, 0, 0.09) 0px 8px 4px, 
      rgba(0, 0, 0, 0.09) 0px 16px 8px, 
      rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    margin: 5.6rem 38%;
+    margin: -45rem 38%;
     
   }
 .img-prf{
