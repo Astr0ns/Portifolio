@@ -6,7 +6,7 @@
   list-style: none;
 }
 
-body{
+body.dark{
   margin: 0;
   background-color: rgba(0, 0, 0, 0.848);
   overflow: hidden;

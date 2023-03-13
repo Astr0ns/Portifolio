@@ -18,58 +18,56 @@ header{
     
     background-color: rgba(128, 128, 128, 0.579);
 }
-/* O interruptor - a caixa ao redor do controle deslizante */
-.switch {
-    margin-left: -10px;
-    font-size: 17px;
-    position:relative;
-    display: inline-flex;
-    width: 3.5em;
-    height: 2em;
-  }
-  
-  /* Ocultar caixa de seleção HTML padrão */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* o controlador deslizante */
-  .slider {
-    margin: -20px -5px 20px 5px;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
-    transition: .4s;
-    border-radius: 5px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 1.4em;
-    width: 0.1em;
-    border-radius: 0px;
-    left: 0.3em;
-    bottom: 0.3em;
-    background-color: white;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #171717;
-    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(2.8em) rotate(360deg);
-}
+
+.btn {
+  display: inline-flex;
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all .2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 250;
+  color: black;
+  background-color: white;
+ }
+ 
+ .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ .btn::after {
+  background-color: #fff;
+ }
+ 
+ .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+ }
+
 
 svg{
     color: #000000 ;
